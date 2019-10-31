@@ -50,7 +50,7 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3",
-    "enhanced-resolve": "^3.3.0"
+    "enhanced-resolve": "^4.1.1"
   },
   "engines": {
     "node": "12.11.1",

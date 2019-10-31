@@ -1,0 +1,47 @@
+#newsfeed {
+    background-color: #EBEBEB;
+    color: #000000;
+    margin: 35px auto;
+    max-width: 1024px;
+
+}
+
+.speak {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.be {
+    font-size: 36px;
+    font-weight: 700;
+}
+ 
+.news-text {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.content-wrap {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 20% 75% 5%;
+    text-align: left;
+    padding: 20px;
+    grid-gap: 10px;
+    align-items: center;
+
+    .title {
+        justify-self: start;
+        grid-column: 1/2;
+    }
+
+    .news {
+        justify-self: start;
+        grid-column: 2/3;
+    }
+
+    .close img {
+        width: 20px;
+        height: 20px;
+    }
+}

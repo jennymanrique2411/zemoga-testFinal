@@ -1,0 +1,136 @@
+.image {
+    position: relative;
+
+    .opacity {
+        background-image: linear-gradient((to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)));
+        bottom: 0;
+        height: 50%;
+        position: absolute;
+        width: 100%;
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.person-info {
+    position: absolute;
+    top: 250px;
+    text-align: left;
+
+    h3 {
+        font-size: 45px;
+        padding: 0;
+        
+        .info {
+            background-color: #31B8B1;
+            background-image: url(../../../assets/Thumbs_Up.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 20px;
+            box-sizing: border-box;
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        &.title-down .info {
+            background-color: #F8B030;
+            background-image: url(../../../assets/Thumbs_Down.png);
+        }
+    }
+}
+
+.category {
+    font-size: 12px;
+    margin-left: 45px;
+    margin-bottom: 17px;
+}
+
+.description {
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 45px;
+    padding: 0 0 20px 0;
+}
+
+.voting {
+    align-items: center;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    margin-left: 45px;
+    
+    button {
+        border: none;
+        height: 35px;
+        margin-right: 10px;
+        width: 35px;
+
+        &.active {
+            border: 2px solid #ffffff;
+        }
+
+        &.hidden {
+            display: none;
+        }
+    }
+
+    .up {
+        background-color: #31B8B1;
+    }
+    
+    .down {
+        background-color: #F8B030;
+    }
+
+    .vote {
+        background: none;
+        color: #ffffff;
+        border: 1px #ffffff solid;
+        height: 40px;
+        width: auto;
+    }
+}
+.progressBar {
+    display: flex;
+    font-size: 30px;
+    font-weight: 100;
+    height: 50px;
+    width: 100%;
+
+    .inline {
+        display: inline-block;
+        width: 50%;
+        height: 100%;
+    }
+
+    .upVote {
+        align-items: center;
+        background-color: #31B8B1;
+        display: flex;
+        justify-content: flex-start;
+
+        img {
+            height: 30px;
+            padding: 10px;
+            width: auto;
+        }
+    }
+
+    .downVote {
+        align-items: center;
+        background-color: #F8B030;
+        display: flex;
+        justify-content: flex-end;
+
+        img {
+            height: 30px;
+            padding: 10px;
+            width: auto;
+        }
+    }
+}

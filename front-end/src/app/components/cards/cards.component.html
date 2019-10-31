@@ -1,0 +1,23 @@
+<div class="image">
+    <div class="opacity"></div>
+    <img src="{{person.Image}}" alt="">
+</div>
+<div class="person-info">
+    <h3 [ngClass]="{
+        'title-up': person.UpVote > person.DownVote,
+        'title-down': person.UpVote < person.DownVote
+         }"><span class="info"></span>{{person.Name}}</h3>
+    <p class="category">{{person.Date}} {{person.Category}}</p>
+    <p class="description">{{person.Content}}</p>
+    <div class="voting">
+        <button class="up" (click)="setSelected(1)" [ngClass]="{'active': selectedIndex == 1,'hidden': voted }"><img src="../../../assets/Thumbs_Up.png"></button>
+        <button class="down" (click)="setSelected(2)" [ngClass]="{'active': selectedIndex == 2 ,'hidden': voted}"><img src="../../../assets/Thumbs_Down.png"></button>
+        <button class="vote" (click)="doVote()">{{ !voted ? 'Vote now' : 'Vote again'}}</button>
+    </div>
+</div>
+<div class="progressBar">
+    <div class="upVote inline" [style.width]="upPerc+'%'"><div><img src="../../../assets/Thumbs_Up.png"></div>{{upPerc.toFixed()}}%</div>
+    <div class="downVote inline" [style.width]="downPerc+'%'">{{downPerc.toFixed()}}%<div><img src="../../../assets/Thumbs_Down.png"></div></div>
+</div>
+
+

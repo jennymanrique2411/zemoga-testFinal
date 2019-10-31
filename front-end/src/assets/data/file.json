@@ -1,0 +1,39 @@
+[
+  {
+    "Name": "Kanye West",
+    "Date": "1 month ago",
+    "Category": "Entertainment",
+    "Content": "Morbi fringilla, nibh non condimentum pretium, dolor risus porttitor libero, eget tincidunt odio augue at enim.",
+    "Image": "../../../assets/Kanye.png",
+    "UpVote": 10,
+    "DownVote": 20
+
+  },
+  {
+    "Name": "Mark Zuckerberg",
+    "Date": "1 month ago",
+    "Category": "Business",
+    "Content": "Morbi fringilla, nibh non condimentum pretium, dolor risus porttitor libero, eget tincidunt odio augue at enim.",
+    "Image": "../../../assets/Mark.png",
+    "UpVote": 10,
+    "DownVote": 20
+  },
+  {
+    "Name": "Cristina Fernandez",
+    "Date": "1 month ago",
+    "Category": "Politics",
+    "Content": "Morbi fringilla, nibh non condimentum pretium, dolor risus porttitor libero, eget tincidunt odio augue at enim.",
+    "Image": "../../../assets/Cristina.png",
+    "UpVote": 10,
+    "DownVote": 20
+  },
+  {
+    "Name": "Malala Yousafzai",
+    "Date": "1 month ago",
+    "Category": "Entertainment",
+    "Content": "Morbi fringilla, nibh non condimentum pretium, dolor risus porttitor libero, eget tincidunt odio augue at enim.",
+    "Image": "../../../assets/Malala.png",
+    "UpVote": 10,
+    "DownVote": 20
+  }
+]

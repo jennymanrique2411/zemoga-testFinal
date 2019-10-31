@@ -1,0 +1,52 @@
+@import './variables';
+
+$bodyColor: #ffffff;
+$smFontSize: 26px;
+
+body {
+    margin: 0;
+    font-family: $font;
+    color: $bodyColor;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+p {
+    margin: 0;
+    padding: 0 0; 
+    font-size: 18px;
+
+}
+
+.thumbUp {
+    display: inline-block;
+    background-color: #1CBBB4;
+    text-decoration: none;
+    padding: 16px 32px;
+    margin: 8px 0;
+}
+
+.thumbDown {
+    display: inline-block;
+    background-color: #FFAD1D;
+    text-decoration: none;
+    padding: 16px 32px;
+    margin: 8px 0;
+}
+
+
+/* Media Queries */
+@media(min-width: 700px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 100px auto 100px;
+    }
+}

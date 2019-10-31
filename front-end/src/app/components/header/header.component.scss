@@ -1,0 +1,109 @@
+@import '../../../variables';
+
+$fontColor : #ffffff;
+
+#showcase {
+    min-height: 450px;
+    color: $fontColor;
+    text-align: center;
+    font-weight: 400;
+
+    nav {
+        color: $fontColor;
+        font-family: $font;
+        text-decoration: none;
+
+        font-weight: 100;
+
+        a {
+            color: $fontColor;
+            font-family: $font;
+            text-decoration: none;
+            font-weight: 100;
+        }
+
+        ul {
+            align-items: center;
+            display: grid;
+            grid-auto-flow: column;
+            justify-content: space-between;
+            margin: 0;
+            padding: 0;
+            
+            li {
+                display: inline;
+
+                &:last-child a {
+                    display: block;
+                    height: 30px;
+                    width: 30px;
+
+                    span {
+                        height: 1px;
+                        overflow: hidden;
+                        position: absolute;
+                        width: 1px;
+                    }
+
+                    &:after {
+                        background-color: white;
+                        content: '';
+                        display: block;
+                        height: 100%;
+                        -webkit-mask: url('../../../assets/magnifier.svg');
+                        mask: url('../../../assets/magnifier.svg');
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .logo {
+            font-size: 32px;
+        }
+    }
+}
+
+#showcase .bg-image {
+    position: absolute;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) 30%), url('../../../assets/pope.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.85;
+}
+
+/* Media Queries */
+@media(min-width: 700px) {
+    #showcase {
+        .content-wrap {
+            margin: 0 auto;
+            max-width: 1024px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            .logo {
+                grid-column: 1/2;
+                justify-self: start;
+                margin-top: 40px;
+
+                h1 {
+                    font-weight: normal;
+                }
+            }
+            .navigation {
+                align-items: center;
+                display: grid;
+                grid-column: 2/4;
+                margin-top: 40px;
+            } 
+        }
+    }
+
+    #showcase, #showcase .bg-image { 
+        min-height: 740px;
+    }
+}

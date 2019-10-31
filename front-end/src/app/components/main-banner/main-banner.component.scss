@@ -1,0 +1,97 @@
+@import '../../../variables';
+
+$fontColor : #ffffff;
+$title: 60px;
+$bigText: 21px;
+$thumbsUp:#31B8B1;
+$thumbsDown: #F8B030;
+
+#main-banner {
+    background-color: rgba(51, 51, 51, 0.45);
+    text-align: left;
+}
+
+.up-title {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.pope-title {
+    font-size: 60px;
+    line-height: 1em;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+}
+
+.small {
+    margin-bottom: 40px;
+    a {
+        color: $fontColor;
+        display: inline;
+        font-size: 14px;
+        text-decoration: none;
+        border-bottom: 1px solid $fontColor;
+
+        &:before {
+            background-color: $fontColor;
+            content: '';
+            display: inline-block;
+            height: 18px;
+            margin-right: 5px;
+            -webkit-mask: url('../../../assets/wikipedia.svg');
+            mask: url('../../../assets/wikipedia.svg');
+            width: 18px;
+        }
+    }
+}
+
+.veredict {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.vote {
+        margin: 0;
+        padding: 0;
+
+    button#thumbsUp {
+        width: 50%;
+        background-color: $thumbsUp;
+        border: none;
+    }
+    button#thumbsDown {
+        width: 50%;
+        background-color: $thumbsDown;
+        border: none;
+    }
+
+    img {
+        margin: 23px;
+    }
+}
+
+#main-paragraph {
+    font-weight: 300;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.main-box {
+    padding: 40px 35px;
+}
+
+.closing {
+    display: grid;
+    
+}
+
+@media(min-width: 700px) {
+    #main-banner {
+        left: 130px;
+        position: absolute;
+        top: 170px;
+        width: 500px;
+    }
+}
